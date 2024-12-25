@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delicious Bites</title>
+    <title>Delicious Bites </title>
     <style>
         *{
              margin: 0;
@@ -49,17 +49,34 @@
             height: 3rem;
         }
         nav a{
+            padding: 0.5rem;
             color: white;
             text-decoration: none;
-
-          
+        }
+        nav a:hover{
+            padding: .5rem;
+            border-radius: 9px;
+            background-color: rgb(213, 140, 76);
         }
         .menu-section{
             padding: 50px 20px;
-            border: 3px solid orange;
         }
+        .menu-section h2{
+            text-align: center;
+            margin-bottom: 1rem;
+            color: transparent;
+            background: linear-gradient(red,yellow);
+            -webkit-background-clip: text;
+            font-size: 3rem;
+            font-family: cursive;
+            transition: transform 1s ease-in-out 0.3s; /* Smooth transition for rotation */
+        }
+ 
+
+    .menu-section h2:hover {
+        transform: rotate(372deg); /* Rotate the element by .... degrees */
+    }
         .menu-container{
-            border: 1px solid blue;
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
         }
@@ -67,18 +84,25 @@
             width: 280px;
             height: 290px;
             border-radius: 12px;
+            border: 0.1rem solid transparent;
+            padding: 0.1rem;
+        }
+        .menu-item img:hover{
+            border: 0.1rem solid blue;
+            padding: 0.1rem;
         }
         .menu-item h3{
-            margin: 15px 0 10px; <!-- top=15 , left=0 right=0 ,bottom=10-->
+            margin: 15px 0 10px; /* top=15px, right=0, bottom=10px, left=0 (yo xain )*/
+
             
         }
+        .menu-item p{
+            text-align: center;
+        }
         .menu-item{
-            border: 1px dotted black;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            margin-bottom: 24px;
-            
+            align-items: center;  
             
         }
 
@@ -97,10 +121,12 @@
     <nav>
         <a href="#menu">Menu </a>
         <a href="#menu">Specials</a>
-        <a href="#menu">About us</a>
+        <a href="#">About us</a>
         <a href="https://github.com/Nirpa332" target="_blank">Contact Us 📱</a>
+       
     </nav>
     <section class="menu-section">
+        <h2>Menu</h2>
         <div class="menu-container">
             <div class="menu-item">
                 <img src="./images/pizza.jpg" alt="pizza ko photo">

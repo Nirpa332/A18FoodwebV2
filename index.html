@@ -121,6 +121,7 @@
         }
         .special-section h2{
             text-align: center;
+            margin-bottom: 1rem;
         }
         .special-container{
             display: flex;
@@ -128,7 +129,7 @@
             justify-content: center;
             gap: 20px;
         }
-        /* .special-item{
+        .special-item{
             background: white;
             color: #333;
             padding: 20px;
@@ -136,54 +137,9 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             max-width: 300px;
 
-        } */
+        }
+        
 
-
-
-
-
-
-
-
-        .special-item {
-    background: rgb(169, 163, 163);
-    color: #333;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    position: relative; /* Required for positioning child elements */
-    text-align: center;
-    overflow: hidden; /* Ensures content stays within bounds */
-}
-
-.special-item h3 {
-    opacity: 0; /* Initially hidden */
-    transform: translateY(20px); /* Slightly below its position */
-    transition: all 0.5s ease-in-out;
-    color: white;
-}
-.special-item p {
-    opacity: 0; /* Initially hidden */
-    transform: translateY(20px); /* Slightly below its position */
-    transition: all 0.5s ease-in-out;
-    color: wheat;
-    
-}
-
-.special-item:hover h3 {
-    opacity: 1; /* Fully visible on hover */
-    transform: translateY(0); /* Moves into place */
-}
-.special-item:hover p {
-    opacity: 1; /* Fully visible on hover */
-    transform: translateY(0); /* Moves into place */
-}
-
-
-.special-item:hover {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
-}
 
 
 

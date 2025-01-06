@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delicious Bites </title>
+    <title>Delicious Bites  </title>
     <style>
-        *{
-             margin: 0;
-             padding: 0;
+        * {
+            margin: 0;
+            padding: 0;
         }
-        body{
+
+        body {
             font-family: Arial, Helvetica, sans-serif;
 
         }
-        header{
+
+        header {
             height: 100dvh;
             background: url(./images/hero.jpg);
             background-size: cover;
             color: white;
-            
+
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
 
         }
-        header h1{
+
+        header h1 {
             font-size: 3.5rem;
             margin-bottom: 1.25rem;
             color: transparent;
-            background: linear-gradient(red,yellow);
-            -webkit-background-clip: text;
-        }
-        header p{
-            font-size: 1.5rem;
-            color: transparent;
-            background: linear-gradient(yellow,rgb(231, 118, 118));
+            background: linear-gradient(red, yellow);
             -webkit-background-clip: text;
         }
 
-        nav{
+        header p {
+            font-size: 1.5rem;
+            color: transparent;
+            background: linear-gradient(yellow, rgb(231, 118, 118));
+            -webkit-background-clip: text;
+        }
+
+        nav {
             margin-top: 1rem;
             background-color: #333;
             display: flex;
@@ -48,68 +53,82 @@
             gap: 1rem;
             height: 3rem;
         }
-        nav a{
+
+        nav a {
             padding: 0.5rem;
             color: white;
             text-decoration: none;
         }
-        nav a:hover{
+
+        nav a:hover {
             padding: .5rem;
             border-radius: 9px;
             background-color: rgb(213, 140, 76);
         }
-        .menu-section{
+
+        .menu-section {
             padding: 50px 20px;
         }
-        .menu-section h2{
+
+        .menu-section h2 {
             text-align: center;
             margin-bottom: 1rem;
             color: transparent;
-            background: linear-gradient(red,yellow);
+            background: linear-gradient(red, yellow);
             -webkit-background-clip: text;
             font-size: 3rem;
             font-family: cursive;
-            transition: transform 1s ease-in-out 0.3s; /* Smooth transition for rotation */
+            transition: transform 1s ease-in-out 0.3s;
+            /* Smooth transition for rotation */
         }
- 
 
-    .menu-section h2:hover {
-        transform: rotate(372deg); /* Rotate the element by .... degrees */
-    }
-        .menu-container{
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+        .menu-section h2:hover {
+            transform: rotate(372deg);
+            /* Rotate the element by .... degrees */
         }
-        .menu-item img{
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .menu-item img {
             width: 280px;
             height: 290px;
             border-radius: 12px;
             border: 0.1rem solid transparent;
             padding: 0.1rem;
         }
-        .menu-item img:hover{
+
+        .menu-item img:hover {
             border: 0.1rem solid blue;
             padding: 0.1rem;
         }
-        .menu-item h3{
-            margin: 15px 0 10px; /* top=15px, right=0, bottom=10px, left=0 (yo xain )*/
 
-            
+        .menu-item h3 {
+            margin: 15px 0 10px;
+            /* top=15px, right=0, bottom=10px, left=0 (yo xain )*/
+
+
         }
-        .menu-item p{
+
+        .menu-item p {
             text-align: center;
             margin-bottom: 3px;
         }
-        .menu-item{
+
+        .menu-item {
             display: flex;
             flex-direction: column;
-            align-items: center;  
-            
-        }
-        .special-section{
-            background:linear-gradient(0deg, rgba(0,0,0,.60)0%, rgba(0,0,0,.60)100%),url(./images/banner.jpg);
+            align-items: center;
 
-            
+        }
+
+        .special-section {
+            background: linear-gradient(0deg, rgba(0, 0, 0, .60)0%, rgba(0, 0, 0, .60)100%), url(./images/banner.jpg);
+
+
             /* background: url(./images/banner.jpg);*/
             background-position: center center;
             background-size: cover;
@@ -117,35 +136,157 @@
 
             border: 1px solid blue;
             margin-bottom: 20px;
-            
+
         }
-        .special-section h2{
+
+        .special-section h2 {
             text-align: center;
             margin-bottom: 1rem;
         }
-        .special-container{
+
+        .special-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
         }
-        .special-item{
+
+        .special-item {
             background: white;
             color: #333;
             padding: 20px;
             border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 300px;
 
-        }
-        
 
+        }
+
+
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+
+
+        }
+
+        .about-text,
+        .about-image {
+            flex: 1;
+            max-width: 600px;
+            min-width: 280;
+            padding: 20px;
+        }
+
+        .about-text h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about-section p {
+            margin-bottom: 14px;
+        }
+
+        .about-image img {
+            width: 100%;
+
+        }
+
+        .contact-section {
+            background-color: #e9ece1;
+            text-align: center;
+            padding: 12px;
+
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding-bottom: 20px;
+        }
+
+        .contact-details,
+        .contact-form {
+
+            flex: 1;
+            max-width: 500px;
+        }
+      
+        /* .grid-form{
+                display: grid;
+                grid-template-columns: repeat(2,minmax(2px,1fr));
+                gap: 1rem;
+            }
+            .grid-form input{
+                width: 95%;
+                border-radius: 9px;
+                padding: 10px;
+                border: 1px solid black;
+            } */
+             .contact-form form{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                
+             }
+             .contact-form input,button{
+                border: 1px solid black;
+                border-radius: 9px;
+                height: 3rem;
+                
+             }
+             .contact-form textarea{
+                border: 1px dotted black;
+                border-radius: 9px;
+             }
+             
+             
+             .menu-table{
+                width: 100%;
+             }
+             .menu-table th, .menu-table td,input{
+                border: 1px solid #ddd;
+                text-align: left;
+                padding: 10px;
+             }
+             .table-section h3{
+                text-align: center;
+                padding:20px 0;
+             }
+             .menu-table th{
+                background-color: #f4f4f4;
+             }
+             .menu-table tr:nth-child(even){
+                background-color: #f9f9f9;
+             }
+             .menu-table tr:hover{
+                background-color: #f1f1f1;
+             }
+             .menu-table input[type="number"] {
+           
+                text-align: center;
+            }
+                
+
+
+             footer{
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 20px 10px;
+             }
+            
 
 
 
     </style>
-    
+
 </head>
+
 <body>
     <header>
         <div>
@@ -158,7 +299,7 @@
         <a href="#menu">Specials</a>
         <a href="#">About us</a>
         <a href="https://github.com/Nirpa332" target="_blank">Contact Us 📱</a>
-       
+
     </nav>
     <section class="menu-section">
         <h2>Menu</h2>
@@ -184,29 +325,155 @@
                 <p>Classic pizza topped with fresh tomato sauce,mozzerlla,meat,baconpan</p>
             </div>
 
-            
+
         </div>
 
 
     </section>
     <section class="special-section">
         <h2>Chef's special</h2>
-    <div class="special-container">
-        <div class="special-item">
-            <h3>Truffle burger 🍔🍔🍔</h3>
-            <p>OUr signeture burger topped with truffle oil and parmesan cheese</p>
+        <div class="special-container">
+            <div class="special-item">
+                <h3>Truffle burger 🍔🍔🍔</h3>
+                <p>OUr signeture burger topped with truffle oil and parmesan cheese</p>
+            </div>
+            <div class="special-item">
+                <h3>Lobster BIsque 🦞🦞🦞</h3>
+                <p>hello our Lobster BIsque topped with truffle oil and parmesan cheese</p>
+            </div>
+            <div class="special-item">
+                <h3>Chocklate Lava cake 🎂🎂🎂</h3>
+                <p>Our Chocklate Lava cake topped with truffle oil and parmesan cheese</p>
+            </div>
         </div>
-        <div class="special-item">
-            <h3>Lobster BIsque 🦞🦞🦞</h3>
-            <p>hello our Lobster BIsque topped with truffle oil and parmesan cheese</p>
-        </div>
-        <div class="special-item">
-            <h3>Chocklate Lava cake 🎂🎂🎂</h3>
-            <p>Our  Chocklate Lava cake topped with truffle oil and parmesan cheese</p>
-        </div>
-    </div>
     </section>
-    
-    
+    <section class="about-section">
+        <div class="about-text">
+            <h2>About us</h2>
+            <p>At Delicious bites,we are passionate about serving high quality food</p>
+            <p>Founded in 2024, we have quickly become a favourite destination for food lovers,offering
+                a umique blend of treaditional and modern
+            </p>
+            <p>Visit us to experience warm hospitality, great food and services </p>
+        </div>
+
+        <div class="about-image">
+            <img src="./images/about.jpg" alt="about photo">
+
+        </div>
+
+
+    </section>
+    <div class="table-section">
+        <h3>Menu Categories</h3>
+        <table class="menu-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Dish</th>
+                    <th>Discription</th>
+                    <th>Price</th>
+                    <th>Calories</th>
+                    <th>Select Categories</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Appetizers</td>
+                    <td>Chicken wings</td>
+                    <td>hawa discription jpt</td>
+                    <td>jati tireni vo</td>
+                    <td>72 calories</td>
+                    <td>jpt hawa catagories</td>
+                    <td> <input type="number" name="quantity" value="1" min="1"> </td>
+                </tr>
+                <tr>
+                    <td>Appetizers</td>
+                    <td>wind wings</td>
+                    <td>naya discription jpt</td>
+                    <td>  your choice bro tireni vo</td>
+                    <td>72 calories</td>
+                    <td>jpt hawa catagories</td>
+                    <td> <input type="number" name="quantity" value="1" min="1"> </td>
+                </tr>
+               
+                <tr>
+                    <td>Appetizers</td>
+                    <td>Chicken wings</td>
+                    <td>hawa discription jpt</td>
+                    <td>jati tireni vo</td>
+                    <td>72 calories</td>
+                    <td>jpt hawa catagories</td>
+                    <td> <input type="number" name="quantity" value="1" min="1"> </td>
+                </tr>
+                 <tr>
+                    <td>Appetizers</td>
+                    <td>Chicken wings</td>
+                    <td>hawa discription jpt</td>
+                    <td>jati tireni vo</td>
+                    <td>72 calories</td>
+                    <td>jpt hawa catagories</td>
+                    <td> <input type="number" name="quantity" value="1" min="1"> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <section class="contact-section">
+        <h2>Contact us</h2>
+        <div class="contact-container">
+            <div class="contact-details">
+                <h3>Get in Touch</h3>
+                <p><strong>Email: </strong> DeliciousBites@gmail.com</p>
+                <p><strong>Phone: </strong> 9805625425</p>
+                <p><strong>Address: </strong>New-baneshwor</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d1766.455118088056!2d85.33426817182013!3d27.689169105948785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d27.687352399999998!2d85.33492559999999!4m5!1s0x39eb1999d6f95655%3A0x674edacc64fd132!2sGlobal%20IME%20Bank%20Limited%2C%20Kathmandu!3m2!1d27.6944521!2d85.3373967!5e0!3m2!1sen!2snp!4v1735281527503!5m2!1sen!2snp"
+                    width="250" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+
+                </iframe> <!--  shift + alt + f -->
+            </div>
+            <div class="contact-form">
+                <!-- <div class="grid-form">
+                    <div>
+                        <label for="name">First Name :</label>
+                    <input type="name" id="name" name="name" required placeholder="Enter First Name">
+                    </div>
+            
+                    <div>
+                        <label for="name">Last Name :</label>
+                    <input type="name" id="name" name="name" required placeholder=" enter last name">
+            
+                    </div>
+                    <div>
+                        <label for="contact">Contact</label>
+                    <input type="name" id="name" name="contact" required placeholder="enter your contact number .">
+            
+                    </div>
+                 </div> -->
+                <form>
+                 <h3>Send us messaage</h3>
+                 <input type="text" name="name" placeholder="Enter your name" required>
+                 <input type="text" name="name" placeholder="Enter your email" required>
+                 <textarea name="messaage" placeholder="Enter your message"
+                    rows="10" cols="40" required></textarea>
+
+                    <button>Submit</button>            
+                </form >
+                    
+                    
+                </div> <!--contact container close-->
+                
+            </div>
+
+    </section>
+
+
+    <footer>
+        <p> &copy; 2025 Delicious BItes. All tight teserve.</p>
+    </footer>
+
+
 </body>
+
 </html>
